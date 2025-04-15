@@ -1,6 +1,6 @@
 public class IfElse {
 
-    public static void main(String[] args) {
+    public static void main(StringDemo[] args) {
         printOddOrEven(12);
     }
 

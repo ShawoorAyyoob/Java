@@ -1,5 +1,5 @@
 public class Fizz {
-    public static void main(String[] args) {
+    public static void main(StringDemo[] args) {
         printFizz(1,10);
     }
 

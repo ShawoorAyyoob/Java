@@ -1,10 +1,8 @@
-public class Factorial {
-    
+public class factPract {
     public static void main(StringDemo[] args) {
-        printFactorial(4);
+        calcFact(5);
     }
-   
-    public static void printFactorial(int n) {
+    public static void calcFact(int n) {
         int fact = 1;
         for (int i = 1; i <= n; i++) {
             fact = fact * i;
