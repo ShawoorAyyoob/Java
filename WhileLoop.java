@@ -1,5 +1,5 @@
 public class WhileLoop {
-    public static void main(StringDemo[] args) {
+    public static void main(String[] args) {
         printTable(5);
         printTable(10);
 

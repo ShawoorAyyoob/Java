@@ -1,5 +1,5 @@
 public class PrimeNo {
-    public static void main(StringDemo[] args) {
+    public static void main(String[] args) {
         printPrimeNo(12);
         printPrimeNo(11);
         printPrimeNo(17);

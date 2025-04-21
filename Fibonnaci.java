@@ -1,5 +1,5 @@
 public class Fibonnaci {
-    public static void main(StringDemo[] args) {
+    public static void main(String[] args) {
         printFib(10);
     }
 

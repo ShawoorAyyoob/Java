@@ -1,5 +1,5 @@
 public class ForLoop {
-    public static void main(StringDemo[] args) {
+    public static void main(String[] args) {
         printTable(4);
     }
 

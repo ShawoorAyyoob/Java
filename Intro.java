@@ -1,6 +1,6 @@
 class Intro {
     
-    public static void main(StringDemo[] args) {
+    public static void main(String[] args) {
         System.out.println("Hello World");
         int result = add(10, 20);
         System.out.println("Sum = " + result);

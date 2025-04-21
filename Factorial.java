@@ -1,6 +1,6 @@
 public class Factorial {
     
-    public static void main(StringDemo[] args) {
+    public static void main(String[] args) {
         printFactorial(4);
     }
    

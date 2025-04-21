@@ -2,7 +2,7 @@
 // Step 2- Compare the orginal with reversed number.
 
 public class Palindrome {
-    public static void main(StringDemo[] args) {
+    public static void main(String[] args) {
         int orignalNo = 12321;
         int reversedNo = reverse(orignalNo);
         compareNo(orignalNo, reversedNo);
