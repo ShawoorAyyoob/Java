@@ -1,7 +1,7 @@
 public class Encapsulation {
     public static void main(String[] args) {
         Person person1 = new Person();
-        person1.setName("Roy");
+        person1.setName("Roy154");
         person1.setAge(29);
         person1.displayDetails();
     }
@@ -26,6 +26,10 @@ class Person {
     }
 
     void setName(String n) {
+        if (!n.matches("[a-zA-Z ]+")) {
+            System.out.println("Name can only contain alphabets and spaces");
+            return;
+        }
         this.name = n;
     }
 

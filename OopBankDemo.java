@@ -1,8 +1,8 @@
 public class OopBankDemo {
     public static void main(String[] args) {
-        BankAccount account = new BankAccount("Max", 5246, 51500);
-        account.deposit(6000);
-        account.withdraw(2000);
+        BankAccount account = new BankAccount("Max", 5246, 51500.0f);
+        account.deposit(6000f);
+        account.withdraw(2000.0f);
     }
 }
 
