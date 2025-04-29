@@ -1,17 +1,15 @@
 public class EmployeeAbstract {
     public static void main(String[] args) {
-        Employee employee1 = new FullTimeEmployee();
-        Employee employee2 = new PartTimeEmployee();
+        Employee employee1 = new FullTimeEmployee("Roxy", 101, 78000);
+        Employee employee2 = new PartTimeEmployee("Max", 109, 900, 10);
 
-        employee1.calculateSalary();
         employee1.displayDetails();
-        employee2.calculateSalary();
+        System.out.println();
         employee2.displayDetails();
-
     }
 
-    void printEmployee(Employee emp) {
-        
+     static void printEmployee(Employee emp) {
+        emp.displayDetails();
     }
 }
 
@@ -19,32 +17,46 @@ abstract class Employee {
     protected String name;
     protected int employeeId;
 
-    abstract void calculateSalary();
+    Employee(String n, int e) {
+        this.name = n;
+        this.employeeId = e;
+    }
+
+    abstract double calculateSalary();
 
     void displayDetails() {
         System.out.println("*** Employee Details ***");
         System.out.println("Employee ID: " + employeeId);
         System.out.println("Name: " + name);
+        System.out.println("Salary: " + calculateSalary());
     }
 }
 
 class FullTimeEmployee extends Employee {
-    protected double monthlySalary;
+    double monthlySalary;
+    FullTimeEmployee(String n, int e, double m) {
+        super(n, e);
+        this.monthlySalary = m;
+    }
 
     @Override
-    void calculateSalary() {
-        System.out.println(monthlySalary);
-        return;
+        double calculateSalary() {
+        return monthlySalary;
     }
 }
 
 class PartTimeEmployee extends Employee {
+    PartTimeEmployee(String n, int e, double w, int h) {
+        super(n, e);
+        this.hourlyWage = w;
+        this.hoursWorked = h;
+    }
+
     protected double hourlyWage;
     protected int hoursWorked;
 
     @Override
-    void calculateSalary() {
-        System.out.println(hourlyWage * hoursWorked);
-        return;
+    double calculateSalary() {
+        return hourlyWage * hoursWorked;
     }
 }
