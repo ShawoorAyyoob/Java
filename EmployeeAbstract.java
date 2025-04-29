@@ -3,9 +3,9 @@ public class EmployeeAbstract {
         Employee employee1 = new FullTimeEmployee("Roxy", 101, 78000);
         Employee employee2 = new PartTimeEmployee("Max", 109, 900, 10);
 
-        employee1.displayDetails();
+        printEmployee(employee1);
         System.out.println();
-        employee2.displayDetails();
+        printEmployee(employee2);
     }
 
      static void printEmployee(Employee emp) {
