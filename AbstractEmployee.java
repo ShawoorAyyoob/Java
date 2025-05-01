@@ -1,4 +1,4 @@
-public class EmployeeAbstract {
+public class AbstractEmployee {
     public static void main(String[] args) {
         Employee employee1 = new FullTimeEmployee("Roxy", 101, 78000);
         Employee employee2 = new PartTimeEmployee("Max", 109, 900, 10);

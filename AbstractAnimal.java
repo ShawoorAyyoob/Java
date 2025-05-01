@@ -1,4 +1,4 @@
-public class AnimalAbstract {
+public class AbstractAnimal {
     public static void main(String[] args) {
         Animal myAnimal1 = new Dog();
         Animal myAnimal2 = new Cat();
