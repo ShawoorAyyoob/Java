@@ -3,7 +3,7 @@ public class FinalVarCar {
         Car car = new Car();
         car.setSpeed(300);
         System.out.println("Current Speed of Buggati: " + car.currentSpeed);
-        car.MAX_SPEED = 300;
+        // car.MAX_SPEED = 300;
     }
 }
 

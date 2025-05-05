@@ -2,7 +2,7 @@ public class FinalVarAndMet {
     public static void main(String[] args) {
         final int MAX_SPEED = 100;
         System.out.println("Max Speed Limit = " + MAX_SPEED);
-        MAX_SPEED = 150;
+        // MAX_SPEED = 150;
     }
 }
 
@@ -13,7 +13,7 @@ class Vehicle {
 }
 
 class Car extends Vehicle {
-    public void showType(){
-        System.out.println("New Car");
-    }
+    // public void showType(){
+    //     System.out.println("New Car");
+    // }
 }

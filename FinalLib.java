@@ -12,9 +12,9 @@ final class LibraryItem{
         System.out.println("Title of the Book is " + title);
     }
 }
-class Book extends LibraryItem{
+// class Book extends LibraryItem{
     
-}
+// }
 
 /* 
  Answers to the Questions
