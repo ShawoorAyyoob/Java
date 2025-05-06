@@ -1,17 +1,17 @@
 public class OopBook {
     public static void main(String[] args) {
-        Book book1 = new Book("Java Programming", "Aeraf", 7800, 100);
+        Book2 book1 = new Book2("Java Programming", "Aeraf", 7800, 100);
         book1.displayBook();
     }
 }
 
-class Book {
+class Book2 {
     String title;
     String author;
     double price;
     int pages;
 
-    Book(String t, String a, double p, int s) {
+    Book2(String t, String a, double p, int s) {
         this.title = t;
         this.author = a;
         this.price = p;
