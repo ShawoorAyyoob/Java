@@ -1,4 +1,4 @@
-package com.SkTech.Accounts.Sales;
+package com.sktech.accounts.sales;
 
 public class Invoice {
     int invoiceNumber;

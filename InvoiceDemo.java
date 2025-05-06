@@ -1,4 +1,4 @@
-import com.SkTech.Accounts.Sales.Invoice;
+import com.sktech.accounts.sales.Invoice;
 
 public class InvoiceDemo {
     public static void main(String[] args) {
