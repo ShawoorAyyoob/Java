@@ -3,23 +3,30 @@ import java.util.Scanner;
 public class ExceptionAsg {
     public static void main(String[] args) {
         int a = 0, b = 0, result = 0;
-        try {
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Enter First number : ");
-            a = scanner.nextInt();
+        boolean validInput = true;
 
-            do {
-                System.out.print("Enter Second number : ");
+        while (!validInput) {
+            try {
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Enter first number: ");
+                a = scanner.nextInt();
+                validInput = true;
+            } catch (NumberFormatException e) {
+                System.out.println("Error: Enter an integer ");
+            }
+        }
+        while (!validInput) {
+            try {
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Enter second number: ");
                 b = scanner.nextInt();
-
-            } while (b == 0);
-
-            result = a / b;
-        } catch (ArithmeticException e) {
-            System.out.println("Error: " + e.getMessage() + " is not allowed. Please enter a valid number.");
-
-        } finally {
-            System.out.println("Result: " + result);
+                validInput = true;
+                result = a / b;
+            } catch (NumberFormatException e) {
+                System.out.println("Error: " + e.getMessage() + result);
+            } finally {
+                System.out.println("Result: " + result);
+            }
         }
     }
 }
