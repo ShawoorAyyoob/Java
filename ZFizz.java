@@ -1,4 +1,4 @@
-public class Fizz {
+public class ZFizz {
     public static void main(String[] args) {
         printFizz(1,10);
     }

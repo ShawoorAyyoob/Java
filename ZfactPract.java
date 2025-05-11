@@ -1,4 +1,4 @@
-public class factPract {
+public class ZfactPract {
     public static void main(StringDemo[] args) {
         calcFact(5);
     }

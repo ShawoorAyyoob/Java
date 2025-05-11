@@ -1,4 +1,4 @@
-public class WhileLoop {
+public class ZWhileLoop {
     public static void main(String[] args) {
         printTable(5);
         printTable(10);

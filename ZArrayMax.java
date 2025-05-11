@@ -1,4 +1,4 @@
-public class ArrayMax {
+public class ZArrayMax {
     public static void main(String[] args) {
         int[] numbers = { 22, 45, 6, 8, 12 };
         int max = numbers[0];

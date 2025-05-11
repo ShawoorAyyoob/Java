@@ -1,4 +1,4 @@
-public class ArrayDemo {
+public class ZArrayDemo {
     public static void main(String[] args) {
         int[] ages = new int[5];
         ages[0] = 35;

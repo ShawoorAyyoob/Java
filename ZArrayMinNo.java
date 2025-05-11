@@ -1,4 +1,4 @@
-public class ArrayMinNo {
+public class ZArrayMinNo {
     public static void main(String[] args) {
         int[] number = new int[5];
         number[0] = 11;

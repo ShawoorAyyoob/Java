@@ -1,4 +1,4 @@
-public class FibPract {
+public class ZFibPract {
     public static void main(StringDemo[] args) {
         printFibNo(5);
     }

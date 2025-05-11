@@ -1,4 +1,4 @@
-public class ForLoop {
+public class ZForLoop {
     public static void main(String[] args) {
         printTable(4);
     }

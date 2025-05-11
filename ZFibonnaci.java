@@ -1,4 +1,4 @@
-public class Fibonnaci {
+public class ZFibonnaci {
     public static void main(String[] args) {
         printFib(10);
     }

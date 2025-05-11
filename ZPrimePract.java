@@ -1,4 +1,4 @@
-public class PrimePract {
+public class ZPrimePract {
     public static void main(StringDemo[] args) {
         printPrimeNo(109);
         printPrimeNo(26);

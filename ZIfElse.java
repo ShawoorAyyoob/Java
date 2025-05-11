@@ -1,4 +1,4 @@
-public class IfElse {
+public class ZIfElse {
 
     public static void main(String[] args) {
         printOddOrEven(12);

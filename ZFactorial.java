@@ -1,4 +1,4 @@
-public class Factorial {
+public class ZFactorial {
     
     public static void main(String[] args) {
         printFactorial(4);

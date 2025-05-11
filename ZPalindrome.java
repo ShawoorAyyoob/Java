@@ -1,7 +1,7 @@
 // Step 1 - reverse Number
 // Step 2- Compare the orginal with reversed number.
 
-public class Palindrome {
+public class ZPalindrome {
     public static void main(String[] args) {
         int orignalNo = 12321;
         int reversedNo = reverse(orignalNo);

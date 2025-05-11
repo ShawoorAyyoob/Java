@@ -1,4 +1,4 @@
-public class ArraySumP {
+public class ZArraySumP {
     public static void main(String[] args) {
         int[] numbers = { 2, 4, 6, 8, 10 };
         int sum = 0;
