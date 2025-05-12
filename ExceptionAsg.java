@@ -2,31 +2,33 @@ import java.util.Scanner;
 
 public class ExceptionAsg {
     public static void main(String[] args) {
-        int a = 0, b = 0, result = 0;
-        boolean validInput = true;
+        Scanner scanner = new Scanner(System.in);
+        int a = 0, b = 0;
+        boolean validInput = false;
 
         while (!validInput) {
             try {
-                Scanner scanner = new Scanner(System.in);
-                System.out.println("Enter first number: ");
-                a = scanner.nextInt();
+                System.out.print("Enter first number: ");
+                a = Integer.parseInt(scanner.nextLine());
                 validInput = true;
             } catch (NumberFormatException e) {
-                System.out.println("Error: Enter an integer ");
+                System.out.print("Error: Enter an integer ");
             }
-        }
+        }   
+        validInput = false;
         while (!validInput) {
             try {
-                Scanner scanner = new Scanner(System.in);
-                System.out.println("Enter second number: ");
-                b = scanner.nextInt();
+                System.out.print("Enter second number: ");
+                b = Integer.parseInt(scanner.nextLine());
+                int result = a / b;
+                System.out.print("Result : " + result);
                 validInput = true;
-                result = a / b;
             } catch (NumberFormatException e) {
-                System.out.println("Error: " + e.getMessage() + result);
-            } finally {
-                System.out.println("Result: " + result);
+                System.out.print("Error: invalid input please enter an integer");
+            } catch (ArithmeticException e) {
+                System.out.print("Error: Division by zero is not valid");
             }
         }
+        scanner.close();
     }
 }
